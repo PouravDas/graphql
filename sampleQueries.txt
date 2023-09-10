@@ -1,0 +1,28 @@
+mutation {
+    create (bookInput:{
+        title:"History V"
+        description:"History book of V"
+        pages:500
+        price:300
+    }) {
+        id
+    }
+}
+
+
+query {
+    allBooks {
+        title
+        description
+        pages
+    }
+}
+
+
+query {
+    getBook(id:1) {
+        title
+        description
+        pages
+    }
+}
